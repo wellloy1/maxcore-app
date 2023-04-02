@@ -1,4 +1,4 @@
-import { start } from "mxcore";
+import { start } from "maxcore";
 import KnexPgClient from "./agents/knexPgClient/index.js";
 
 const knexPgClient = new KnexPgClient();
