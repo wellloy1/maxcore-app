@@ -1,0 +1,19 @@
+{
+  "type": "module",
+  "scripts": {
+    "dev": "export NODE_ENV=development && npx nodemon -r dotenv/config ./app/startup.js",
+    "prod": "export NODE_ENV=production && node -r dotenv/config ./app/startup.js"
+  },
+  "dependencies": {
+    "dotenv": "^16.0.3",
+    "fastify": "^4.12.0",
+    "knex": "^2.4.2",
+    "mxcore": "file:../../mxcore",
+    "pg": "^8.10.0",
+    "xconsoler": "^1.0.6"
+  },
+  "devDependencies": {
+    "@types/node": "^18.11.18",
+    "typescript": "^4.9.5"
+  }
+}

@@ -1,0 +1,15 @@
+{
+	"scripts": {
+		"init": "npm run initdb",
+		"initdb": "knex migrate:latest",
+		"dropdb": "knex migrate:rollback"
+	},
+	"type": "module",
+	"dependencies": {
+		"knex": "^2.2.0",
+		"pg": "^8.8.0"
+	},
+	"devDependencies": {
+		"dotenv": "^16.0.2"
+	}
+}
